@@ -1,0 +1,45 @@
+/* ================== ТИПОГРАФИКА ================== */
+
+// подключение шрифта
+@mixin font(
+  $font_name,
+  $file_name,
+  $weight: 0,
+  $style: normal,
+  $font-display: swap
+) {
+  @font-face { /* stylelint-disable-line at-rule-empty-line-before */
+    font-family: $font_name;
+    font-display: $font-display;
+    src:
+      url('../fonts/#{$file_name}.woff') format('woff2'),
+      url('../fonts/#{$file_name}.woff2') format('woff');
+    @if $weight != 0 {
+      font-weight: #{$weight};
+    }
+    font-style: #{$style};
+  }
+}
+
+// защита о текстового переполнения
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// защита о текстового переполнения (многострочное)
+@mixin paragraph-text-overflow($lines-count: 3) {
+  display: -webkit-box; /* stylelint-disable-line value-no-vendor-prefix */
+  overflow: hidden;
+  -webkit-line-clamp: $lines-count; /* stylelint-disable-line property-no-vendor-prefix */
+  -webkit-box-orient: vertical; /* stylelint-disable-line property-no-vendor-prefix */
+  text-overflow: ellipsis;
+}
+
+// текст с градиентом
+@mixin gradient-text($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text; /* stylelint-disable-line property-no-vendor-prefix */
+  -webkit-text-fill-color: transparent; /* stylelint-disable-line property-no-vendor-prefix */
+}
