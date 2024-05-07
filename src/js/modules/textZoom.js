@@ -24,8 +24,8 @@ export const textZoom = () => {
         .replace(/^([0-9]+).+/g, '$1');
 
       if (
-        (currentFontSize - zoomStep > 0 && !plus) ||
-        (currentFontSize + zoomStep < 200 && plus)
+        currentFontSize - zoomStep > 0 && !plus ||
+        currentFontSize + zoomStep < 200 && plus
       ) {
         let direction = plus ? 1 : -1;
         bookContainer.style.setProperty(
@@ -62,4 +62,4 @@ export const textZoom = () => {
     serifBtn.addEventListener('click', handleSerifBtnOnClick);
     sansSerifBtn.addEventListener('click', handleSansSerifBtnOnClick);
   }
-}
+};

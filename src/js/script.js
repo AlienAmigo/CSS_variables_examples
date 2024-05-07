@@ -7,6 +7,8 @@ function ready(fn) {
       : document.readyState !== 'loading'
   ) {
     fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
   }
 }
 
