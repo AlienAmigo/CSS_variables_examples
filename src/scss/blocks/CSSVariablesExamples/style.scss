@@ -1,0 +1,59 @@
+.CSSVariablesExamples {
+  flex: 1;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+  padding: 2rem;
+  background: #aaa;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .card {
+    ---tmp-cl-card-bg: #ffd;
+    --tmp-cl-card-text: #555;
+    --tmp-card-padding: 10px;
+    --tmp-card-column-span: span 1;
+    --tmp-card-text-font-weight: 400;
+
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    grid-column: var(--card-column-span, var(--tmp-card-column-span));
+    width: auto;
+    height: auto;
+    padding: var(--card-padding, var(--tmp-card-padding));
+    border-radius: 10px;
+    background-color: var(--cl-card-bg, var(---tmp-cl-card-bg));
+    font-family: var(--ff-card-font, sans-serif);
+    color: var(--cl-card-text, var(--tmp-cl-card-text));
+
+    &__title {
+      color: var(--cl-card-title, inherit);
+    }
+
+    &__text {
+      font-weight: var(--card-text-font-weight, var(--tmp-card-text-font-weight));
+    }
+
+    &--active {
+      --cl-card-bg: #212121;
+      --cl-card-text: #ddd;
+      --card-padding: 10px 25px;
+      --card-column-span: span 2;
+    }
+
+    &--warning {
+      --cl-card-title: #d44;
+      --card-text-font-weight: 600;
+
+      &.card--active {
+        --cl-card-text: #999;
+      }
+    }
+  }
+}
