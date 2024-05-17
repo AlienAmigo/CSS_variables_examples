@@ -1,0 +1,67 @@
+@media screen and (min-width: 1440px) {
+  .lg,
+  .md,
+  .sm {
+    display: none;
+  }
+
+  .block {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  .xl,
+  .md,
+  .sm {
+    display: none;
+  }
+
+  .lg {
+    display: inline-block;
+  }
+
+  .block {
+    background-color: green;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 786px) {
+  .xl,
+  .lg,
+  .sm {
+    display: none;
+  }
+
+  .md {
+    display: inline-block;
+  }
+
+  .block {
+    background-color: yellow;
+  }
+
+  .text {
+    color: #444;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .xl,
+  .lg,
+  .md {
+    display: none;
+  }
+
+  .sm {
+    display: inline-block;
+  }
+
+  .block {
+    background-color: red;
+  }
+
+  .text {
+    color: #fff;
+  }
+}
