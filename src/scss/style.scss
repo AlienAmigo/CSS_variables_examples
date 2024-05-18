@@ -12,7 +12,14 @@
 // @import 'blocks/popup';
 
 @import 'blocks/page';
+@import 'blocks/cot';
 
-@import "blocks/textResizeExample/style.css";
+@import "blocks/textResizeExample/book-style.css";
 @import "blocks/textResizeExample/additional";
 @import "blocks/textResizeExample/text-zoom-panel";
+
+@import "blocks/CSSVariablesExamples/style";
+
+@import "blocks/VariablesInMediaQueries/style";
+
+

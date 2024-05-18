@@ -43,9 +43,9 @@ export const textZoom = () => {
     };
 
     const handleSerifBtnOnClick = () => {
-      console.log('1');
       bookContainer.style.fontFamily = 'var(--font-family-serif)';
     };
+
     const handleSansSerifBtnOnClick = () => {
       bookContainer.style.fontFamily = 'var(--font-family-sans-serif)';
     };

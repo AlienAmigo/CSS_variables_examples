@@ -1,0 +1,13 @@
+.cot {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 3rem;
+  font-family: sans-serif;
+
+
+
+  &__item {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+  }
+}
