@@ -13,13 +13,20 @@
 
 @import 'blocks/page';
 @import 'blocks/cot';
-
 @import "blocks/textResizeExample/book-style.css";
-@import "blocks/textResizeExample/additional";
-@import "blocks/textResizeExample/text-zoom-panel";
 
-@import "blocks/CSSVariablesExamples/style";
+body:has(.text-zoom-panel) {
+  @import "blocks/textResizeExample/additional";
+  @import "blocks/textResizeExample/text-zoom-panel";
+}
 
-@import "blocks/VariablesInMediaQueries/style";
+
+body:has(.CSSVariablesExamples) {
+  @import "blocks/CSSVariablesExamples/style";
+}
+
+body:has(.VariablesInMediaQueries) {
+  @import "blocks/VariablesInMediaQueries/style";
+}
 
 

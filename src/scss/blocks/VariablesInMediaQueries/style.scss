@@ -1,22 +1,18 @@
 :root {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
   font-size: 16px;
 
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100wv;
-    height: 100vh;
-    background: #bebebe;
-    padding: 0;
-    margin: 0;
-  }
+}
+
+& {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: #bebebe;
+  padding: 0;
+  margin: 0;
 }
 
 .VariablesInMediaQueries {
@@ -44,15 +40,15 @@
   }
 
 
-  // ============== static ====================
-  //@import "static";
-
-  // ============== SCSS variables ============
-  //@import "scss-vars";
-
-  // ============== global CSS variables ======
-  //@import "css-vars-global";
-
-  // ============== non-global CSS variables =
-  @import "css-vars-non-global";
 }
+// ============== static ====================
+//@import "static";
+
+// ============== SCSS variables ============
+//@import "scss-vars";
+
+// ============== global CSS variables ======
+//@import "css-vars-global";
+
+// ============== non-global CSS variables =
+//@import "css-vars-non-global";
