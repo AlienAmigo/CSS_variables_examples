@@ -1,79 +1,72 @@
-& {
-  --screen-xl: 1440px;
-  --screen-lg: 1024px;
-  --screen-md: 786px;
+@import './../../variables';
+.block {
+  width: $screen-xl;
+}
 
-  $screen-xl: var(--screen-xl);
+@media screen and (min-width: $screen-xl) {
+  .lg,
+  .md,
+  .sm {
+    display: none;
+  }
 
   .block {
-    width: $screen-xl;
-  }
-
-  @media screen and (min-width: var(--screen-xl)) {
-    .lg,
-    .md,
-    .sm {
-      display: none;
-    }
-
-    .block {
-      background-color: blue;
-    }
-  }
-
-  @media screen and (max-width: var(--screen-xl)) and (min-width: var(--screen-lg)) {
-    .xl,
-    .md,
-    .sm {
-      display: none;
-    }
-
-    .lg {
-      display: inline-block;
-    }
-
-    .block {
-      background-color: green;
-    }
-  }
-
-  @media screen and (max-width: var(--screen-lg)) and (min-width: var(--screen-md)) {
-    .xl,
-    .lg,
-    .sm {
-      display: none;
-    }
-
-    .md {
-      display: inline-block;
-    }
-
-    .block {
-      background-color: yellow;
-    }
-
-    .text {
-      color: #444;
-    }
-  }
-
-  @media screen and (max-width: var(--screen-md)) {
-    .xl,
-    .lg,
-    .md {
-      display: none;
-    }
-
-    .sm {
-      display: inline-block;
-    }
-
-    .block {
-      background-color: red;
-    }
-
-    .text {
-      color: #fff;
-    }
+    background-color: blue;
   }
 }
+
+//@media screen and (max-width: var(--screen-xl)) and (min-width: var(--screen-lg)) {
+//  .xl,
+//  .md,
+//  .sm {
+//    display: none;
+//  }
+//
+//  .lg {
+//    display: inline-block;
+//  }
+//
+//  .block {
+//    background-color: green;
+//  }
+//}
+//
+//@media screen and (max-width: var(--screen-lg)) and (min-width: var(--screen-md)) {
+//  .xl,
+//  .lg,
+//  .sm {
+//    display: none;
+//  }
+//
+//  .md {
+//    display: inline-block;
+//  }
+//
+//  .block {
+//    background-color: yellow;
+//  }
+//
+//  .text {
+//    color: #444;
+//  }
+//}
+//
+//@media screen and (max-width: var(--screen-md)) {
+//  .xl,
+//  .lg,
+//  .md {
+//    display: none;
+//  }
+//
+//  .sm {
+//    display: inline-block;
+//  }
+//
+//  .block {
+//    background-color: red;
+//  }
+//
+//  .text {
+//    color: #fff;
+//  }
+//}

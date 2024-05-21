@@ -4,7 +4,21 @@
   padding: 4rem 3rem;
   font-family: sans-serif;
 
+  &__title {
+    margin: 2rem 0 1rem;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #aeaeae;
+    font-size: 1.5rem;
+  }
 
+  &__subtitle {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0 0.5rem;
+    font-size: 1.25rem;
+  }
 
   &__item {
     margin: 0.5rem 0;
