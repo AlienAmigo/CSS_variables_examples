@@ -1,4 +1,17 @@
-# Стартовый проект для вёрстки
+# Примеры использования css-переменных
+
+---
+
+Часть примеров для доклада.
+
+Презентация:
+https://docs.google.com/presentation/d/1PoiPVJ2XhmoZBtSIAwq1U4ezgj9kode-v01zllW50bk/edit?usp=sharing
+
+
+Остальные примеры:
+
+- https://codepen.io/AlienAmigo/pen/QWPemym
+- https://codepen.io/AlienAmigo/pen/ExJqRRd
 
 ---
 
